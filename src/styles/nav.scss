@@ -1,14 +1,25 @@
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    min-height: 10vh;
-    background: rgb(119, 114, 114);
-    color: white;
-    ul{
-        width: 50%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style: none;
-    }
+// nav{
+//     display: flex;
+//     justify-content: space-evenly;
+//     min-height: 10vh;
+//     background: rgb(119, 114, 114);
+//     color: white;
+//     ul{
+//         width: 50%;
+//         display: flex;
+//         justify-content: space-evenly;
+//         align-items: center;
+//         list-style: none;
+//         li{
+//             color: white;
+//             text-decoration: none;
+//         }
+//     }
+// }
+
+li {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+
 }
