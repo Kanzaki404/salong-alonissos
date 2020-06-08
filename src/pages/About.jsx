@@ -33,6 +33,7 @@ const AboutStyle = styled.div`
   h1 {
     font-family: "Poppins", sans-serif;
     padding-top: 50px;
+    font-weight: 100;
   }
 
   .staff {
@@ -40,7 +41,8 @@ const AboutStyle = styled.div`
     font-family: "Quicksand", sans-serif;
     padding-top: 2px;
     font-size: 1.5rem;
-    padding-bottom: 25px;
+    padding-bottom: 1px;
+    font-weight: 200;
 
   }
 
@@ -49,8 +51,10 @@ const AboutStyle = styled.div`
     grid-template-columns: 1fr 1fr;
     margin: 15px;
 
+
     p{
-        text-align: end;
+        text-align: left;
+        padding-left: 19px;
     }
   }
 
@@ -61,13 +65,15 @@ const AboutStyle = styled.div`
     padding-bottom: 20px;
     p{
         text-align: start;
+        padding-left: 15px;
     }
   }
   img{
     margin: auto;
+    border-radius: 3px;
   }
   hr{
-      width: 90%;
+      width: 87%;
   }
 `;
 

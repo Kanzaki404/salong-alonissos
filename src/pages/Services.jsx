@@ -8,6 +8,7 @@ export default function Services() {
     padding-top: 50px;
     h1 {
       text-align: center;
+      font-weight: 400;
     }
     .cuttingStyling {
       text-align: center;
@@ -15,8 +16,9 @@ export default function Services() {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      border-radius: 3px;
       margin: auto;
-      width: 80%;
+      width: 93%;
       height: 201px;
       margin-bottom: 25px;
       margin-top: 25px;
@@ -25,7 +27,7 @@ export default function Services() {
         color: white;
 
         font-weight: 200;
-        
+
       }
     }
 
@@ -35,8 +37,9 @@ export default function Services() {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      border-radius: 3px;
       margin: auto;
-      width: 80%;
+      width: 93%;
       height: 201px;
       margin-bottom: 135px;
       margin-top: 25px;
@@ -74,7 +77,7 @@ export default function Services() {
         <Link to='/prices'>
         <button> Prices </button>
         </Link>
-       
+
       </div>
       <hr/>
     </StyledServices>

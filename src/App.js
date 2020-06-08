@@ -8,12 +8,13 @@ import Services from './pages/Services'
 import Prices from './pages/Prices'
 import OpeningHours from './pages/OpeningHours'
 import About from './pages/About'
-
+import ScrollToTop from './scrollToTop'
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <div className="App">
         <Nav/>
         <Switch>
