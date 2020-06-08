@@ -11,6 +11,9 @@ const Ul = styled.ul`
 
     font-size: 20px;
   }
+
+
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: rgba(200, 200, 200, 0.93);

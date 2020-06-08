@@ -14,6 +14,10 @@ const HamburgerStyle = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
   }
+  @media (min-width: 769px) {
+    display: none;
+  }
+
   div {
     width: 2rem;
     height: 0.15rem;
@@ -31,7 +35,7 @@ const HamburgerStyle = styled.div`
       transform: ${({ open }) => !open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
-`
+`;
 
 
 

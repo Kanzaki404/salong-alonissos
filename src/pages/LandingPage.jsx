@@ -83,6 +83,12 @@ const LandingPageStyle = styled.div`
     margin-bottom: -5rem;
   }
 
+
+@media(min-width){
+
+
+}
+
   @keyframes scale-in-hor-left {
     0% {
       -webkit-transform: scaleX(0);
@@ -116,6 +122,7 @@ const LandingPageStyle = styled.div`
       opacity: 1;
     }
   }
+
 `;
 
 export default function LandingPage() {
