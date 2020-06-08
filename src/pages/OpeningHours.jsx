@@ -28,6 +28,7 @@ export default function OpeningHours() {
         color: white;
         font-family: 'Quicksand', sans-serif;
         margin-bottom: 35px;
+        animation: puff-in-center 0.5s;
     }
     div{
         display:flex;
