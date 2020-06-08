@@ -7,6 +7,7 @@ h1{
     text-align:center;
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 35px;
+
 }
 h2{
     font-weight: 100;
@@ -26,7 +27,9 @@ p{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-`
+
+
+`;
 export default function Prices() {
     return (
         <StyledPrices>
