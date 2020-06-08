@@ -29,8 +29,10 @@ const VisitUs = styled.div`
   color: white;
   h1 {
     margin-top: 0px;
-    padding-top: 5px;
+    padding-top: 25px;
     font-weight: 400;
+    font-size: 25px;
+
   }
   hr {
     width: 50%;

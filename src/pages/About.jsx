@@ -17,7 +17,7 @@ const AboutStyle = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    width: 96%;
+    width: 88%;
     height: 200px;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -27,6 +27,7 @@ const AboutStyle = styled.div`
     p {
       padding: 60px 17px 26px 30px;
       font-weight: 100;
+      animation: puff-in-center 0.5s;
     }
   }
 
@@ -34,6 +35,7 @@ const AboutStyle = styled.div`
     font-family: "Poppins", sans-serif;
     padding-top: 50px;
     font-weight: 100;
+
   }
 
   .staff {
@@ -55,6 +57,7 @@ const AboutStyle = styled.div`
     p{
         text-align: left;
         padding-left: 19px;
+        padding-right: 5px;
     }
   }
 
@@ -75,6 +78,23 @@ const AboutStyle = styled.div`
   hr{
       width: 87%;
   }
+
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
 `;
 
 export default function About() {
@@ -92,7 +112,7 @@ export default function About() {
       </div>
       <hr/>
 
-      <h1 className="staff">Staff</h1>
+      <h1 className="staff">STAFF</h1>
       <div className="workerOne">
         <img src={worker1} alt="" />
         <p>
