@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
-
+import { useLocation } from 'react-router-dom'
 const NavBar = styled.nav`
   height: 0vh;
   background: Transparent;
@@ -16,7 +16,8 @@ const StyledSelector = styled.select`
   margin: 15px;
   font-size: 20px;
   outline-style: none;
-  color: white;
+  
+    color:${({ location }) => location === '/' || location === '/hours' ? 'white' : 'black'};
   option{
     border: none;
     background: transparent;
@@ -26,13 +27,14 @@ const StyledSelector = styled.select`
 `;
 
 export default function Nav() {
+    let location = useLocation();
   return (
     <NavBar>
       <div>
         <Hamburger />
       </div>
       <div>
-        <StyledSelector name="lang" id="lang">
+        <StyledSelector location={location.pathname} name="lang" id="lang">
           <option value="EN">EN</option>
           <option value="GR">GR</option>
         </StyledSelector>

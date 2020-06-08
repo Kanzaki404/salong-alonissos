@@ -7,13 +7,13 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
 
   li {
-    padding: 18px 10px;
-    padding-left: 15px;
+    padding: 10px;
+
     font-size: 20px;
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(200, 200, 200, 0.93);
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
@@ -27,14 +27,15 @@ const Ul = styled.ul`
 
     li {
       color: black;
-      margin: 0.5rem;
-      font-size: 
+      font-size: 30px;
+      font-weight: 200;
     }
     hr {
       float: left;
       width: 60%;
-      color: #ccc;
       border: none;
+      background-color: #a2a2a2;
+      height: 1px;
     }
   }
 `;
