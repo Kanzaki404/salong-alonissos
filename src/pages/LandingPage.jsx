@@ -104,31 +104,25 @@ const LandingPageStyle = styled.div`
       font-size: 3rem;
     }
     .wrapper {
-
-    margin: 0;
-    padding: 0;
-    text-align: center;
-
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
-  .text {
-    margin-top: 5rem;
-
-  }
+    .text {
+      margin-top: 5rem;
+    }
 
     .logowrapper {
       display: flex;
-    justify-content: center;
-    margin-left: 89px;
+      justify-content: center;
+      margin-left: 89px;
     }
 
-    h3{
-      margin:0;
+    h3 {
+      margin: 0;
       margin-top: 20px;
     }
-
-
-
   }
 
   @keyframes scale-in-hor-left {
@@ -177,7 +171,7 @@ export default function LandingPage() {
       </div>
       <div className="wrapper">
         <div className="text">
-         "We offer our customers the latest within haircare, grooming, styling
+          "We offer our customers the latest within haircare, grooming, styling
           and much more!"
           <br></br>
           <br></br>

@@ -61,8 +61,8 @@ export default function OpeningHours() {
         width: 40vw;
         margin: auto;
       }
-      h1{
-          margin-top:70px;
+      h1 {
+        margin-top: 70px;
       }
     }
   `;

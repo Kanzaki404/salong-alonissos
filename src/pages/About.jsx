@@ -10,7 +10,6 @@ const AboutStyle = styled.div`
 
   text-align: center;
 
-
   .background {
     background-image: url(${makeup});
     background-position: center;
@@ -35,17 +34,14 @@ const AboutStyle = styled.div`
     font-family: "Poppins", sans-serif;
     padding-top: 50px;
     font-weight: 100;
-
   }
 
   .staff {
-
     font-family: "Quicksand", sans-serif;
     padding-top: 2px;
     font-size: 1.5rem;
     padding-bottom: 1px;
     font-weight: 200;
-
   }
 
   .workerOne {
@@ -53,11 +49,10 @@ const AboutStyle = styled.div`
     grid-template-columns: 1fr 1fr;
     margin: 15px;
 
-
-    p{
-        text-align: left;
-        padding-left: 19px;
-        padding-right: 5px;
+    p {
+      text-align: left;
+      padding-left: 19px;
+      padding-right: 5px;
     }
   }
 
@@ -66,19 +61,18 @@ const AboutStyle = styled.div`
     grid-template-columns: 1fr 1fr;
     margin: 15px;
     padding-bottom: 20px;
-    p{
-        text-align: start;
-        padding-left: 15px;
+    p {
+      text-align: start;
+      padding-left: 15px;
     }
   }
-  img{
+  img {
     margin: auto;
     border-radius: 3px;
   }
-  hr{
-      width: 87%;
+  hr {
+    width: 87%;
   }
-
 
   @media (min-width: 769px) {
     width: 70vw;
@@ -86,16 +80,7 @@ const AboutStyle = styled.div`
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
-
-
-
-
-
-
-
   }
-
-
 
   @keyframes puff-in-center {
     0% {
@@ -115,7 +100,6 @@ const AboutStyle = styled.div`
   }
 
   @media (min-width: 769px) {
-
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -123,25 +107,25 @@ const AboutStyle = styled.div`
     margin-top: 50px;
 
     .background {
-    background-image: url(${makeup});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    width: 88%;
-    height: 400px;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    border-radius: 3px;
-    color: white;
-    text-align: left;
-    p {
-      padding: 60px 17px 26px 30px;
-      font-weight: 100;
-      animation: puff-in-center 0.5s;
+      background-image: url(${makeup});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: auto;
+      width: 88%;
+      height: 400px;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      border-radius: 3px;
+      color: white;
+      text-align: left;
+      p {
+        padding: 60px 17px 26px 30px;
+        font-weight: 100;
+        animation: puff-in-center 0.5s;
+      }
     }
   }
-    }
 `;
 
 export default function About() {
@@ -151,13 +135,13 @@ export default function About() {
 
       <div className="background">
         <p>
-        Maria's Salon <br/>
+          Maria's Salon <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
         </p>
       </div>
-      <hr/>
+      <hr />
 
       <h1 className="staff">STAFF</h1>
       <div className="workerOne">
@@ -168,9 +152,8 @@ export default function About() {
           minim veniam.
         </p>
       </div>
-      <hr/>
+      <hr />
       <div className="workerTwo">
-
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
