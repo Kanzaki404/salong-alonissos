@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import image from "../assets/hairstyle-fin.png";
-import desktopImg from "../assets/dektopLandingPage.png";
+import desktopImg from "../assets/dektop.jpg";
 import logo from "../assets/salonLogo.svg";
 import { Link } from "react-router-dom";
 const LandingPageStyle = styled.div`
@@ -127,10 +127,7 @@ const LandingPageStyle = styled.div`
       margin-top: 20px;
     }
 
-    .button service-btn {
 
-
-    }
 
   }
 

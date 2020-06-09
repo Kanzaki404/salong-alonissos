@@ -18,7 +18,7 @@ export default function Services() {
       background-size: cover;
       border-radius: 3px;
       margin: auto;
-      width: 93%;
+      width: 63%;
       height: 260px;
       margin-bottom: 25px;
       margin-top: 25px;
@@ -39,7 +39,7 @@ export default function Services() {
       background-size: cover;
       border-radius: 3px;
       margin: auto;
-      width: 93%;
+      width: 63%;
       height: 260px;
       margin-bottom: 135px;
       margin-top: 25px;
@@ -59,12 +59,16 @@ export default function Services() {
       outline-style: none;
       animation: puff-in-center 0.5s;
       cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+    }
 
     }
     hr{
         width: 80%;
     }
-
 
     @media (min-width: 769px) {
 
@@ -76,28 +80,18 @@ export default function Services() {
 
 
       .cuttingStyling {
-
         height: 400px;
-
-
       }
 
       .manicure {
-
         height: 400px;
-
-
       }
 
       button {
-
         height: 56px;
         width: 174px;
         font-size: 1.3rem;
-
       }
-
-
     }
 
 
