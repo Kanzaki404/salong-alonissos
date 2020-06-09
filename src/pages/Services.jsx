@@ -19,7 +19,7 @@ export default function Services() {
       border-radius: 3px;
       margin: auto;
       width: 63%;
-      height: 260px;
+      height: 240px;
       margin-bottom: 25px;
       margin-top: 25px;
       h1 {
@@ -40,7 +40,7 @@ export default function Services() {
       border-radius: 3px;
       margin: auto;
       width: 63%;
-      height: 260px;
+      height: 240px;
       margin-bottom: 135px;
       margin-top: 25px;
       h1 {
