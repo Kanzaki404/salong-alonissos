@@ -9,8 +9,9 @@ function Map() {
   return (
     <GoogleMap
       defaultZoom={15}
-	  defaultCenter={{ lat: 39.146422, lng: 23.864568 }}
-	  Marker position={{ lat: 39.146422, lng: 23.864568 }}
+      defaultCenter={{ lat: 39.146422, lng: 23.864568 }}
+      Marker
+      position={{ lat: 39.146422, lng: 23.864568 }}
     />
   );
 }
@@ -32,7 +33,6 @@ const VisitUs = styled.div`
     padding-top: 25px;
     font-weight: 400;
     font-size: 25px;
-
   }
   hr {
     width: 50%;
@@ -60,6 +60,15 @@ const Information = styled.div`
       margin-bottom: 6px;
     }
   }
+  @media (min-width: 769px) {
+.right-info{
+  text-align: center;
+}
+    hr {
+      width: 23%;
+      margin: auto;
+    }
+  }
 `;
 const SocialMedia = styled.div`
   display: flex;
@@ -73,9 +82,8 @@ const SocialMedia = styled.div`
 `;
 
 const MapArea = styled.div`
-  margin:  15px 15px 0px 15px;
+  margin: 15px 15px 0px 15px;
   padding-bottom: 15px;
-  
 `;
 export default function Footer() {
   return (
@@ -93,11 +101,15 @@ export default function Footer() {
         </div>
         <div className="right-info">
           <p>Hours:</p>
-          <p>Mon - Fri </p>
-          <p> 8:00-19:00 </p>
+          <div>
+            <p>Mon - Fri </p>
+            <p> 8:00-19:00 </p>
+          </div>
           <hr />
-          <p>Sat - Sun </p>
-          <p> 9:00-22:00 </p>
+          <div>
+            <p>Sat - Sun </p>
+            <p> 9:00-22:00 </p>
+          </div>
         </div>
       </Information>
       <SocialMedia>

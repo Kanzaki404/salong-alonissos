@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import image from "../assets/hairstyle-fin.png";
+import desktopImg from "../assets/dektopLandingPage.png";
 import logo from "../assets/salonLogo.svg";
 import { Link } from "react-router-dom";
 const LandingPageStyle = styled.div`
@@ -81,13 +82,57 @@ const LandingPageStyle = styled.div`
     height: 5rem;
     background-repeat: no-repeat;
     margin-bottom: -5rem;
+    display: block;
   }
 
+  @media (min-width: 769px) {
+    background-image: url(${desktopImg});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    height: 100vh;
+    overflow: auto;
+    h1 {
+      padding-top: 90px;
+      text-align: center;
+      padding-left: 80px;
+      font-size: 3rem;
+    }
+    .wrapper {
 
-@media(min-width){
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    }
+
+  .text {
+    margin-top: 5rem;
+
+  }
+
+    .logowrapper {
+      display: flex;
+    justify-content: center;
+    margin-left: 89px;
+    }
+
+    h3{
+      margin:0;
+      margin-top: 20px;
+    }
+
+    .button service-btn {
 
 
-}
+    }
+
+  }
 
   @keyframes scale-in-hor-left {
     0% {
@@ -122,29 +167,32 @@ const LandingPageStyle = styled.div`
       opacity: 1;
     }
   }
-
 `;
 
 export default function LandingPage() {
   return (
     <LandingPageStyle>
       <h1>Welcome to</h1>
-      <div className="logo"></div>
-      <h3>Maria's Salon</h3>
 
-      <div className="text">
-        We offer our customers the latest within haircare, grooming, styling and
-        much more!
-        <br></br>
-        <br></br>
-        <h4>Maria’s Salon in Alonissos</h4>
+      <div className="logowrapper">
+        <span className="logo"></span>
+        <h3>Maria's Hair Salon</h3>
       </div>
+      <div className="wrapper">
+        <div className="text">
+         "We offer our customers the latest within haircare, grooming, styling
+          and much more!"
+          <br></br>
+          <br></br>
+          <h4>-Maria’s Salon in Alonissos-</h4>
+        </div>
 
-      <br></br>
-      <br></br>
-      <Link  to="/services">
-        <button className="button service-btn">Our Services</button>
-      </Link>
+        <br></br>
+        <br></br>
+        <Link to="/services">
+          <button className="button service-btn">Our Services</button>
+        </Link>
+      </div>
     </LandingPageStyle>
   );
 }

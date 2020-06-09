@@ -34,7 +34,8 @@ p{
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
-  }
+}
+
 @keyframes puff-in-center {
     0% {
       -webkit-transform: scale(2);

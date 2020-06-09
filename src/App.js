@@ -15,10 +15,10 @@ function App() {
   return (
     <Router>
       <ScrollToTop/>
-      <div className="App">
+      <div className="App" >
         <Nav/>
-        <Switch>
-                <Route path = '/' exact component={LandingPage} />
+        <Switch >
+                <Route path = '/' exact  component={LandingPage}  />
                 <Route path = '/services' component={Services} />
                 <Route path = '/prices' component={Prices} />
                 <Route path = '/hours' component={OpeningHours} />

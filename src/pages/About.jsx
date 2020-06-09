@@ -79,6 +79,24 @@ const AboutStyle = styled.div`
       width: 87%;
   }
 
+
+  @media (min-width: 769px) {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+
+
+
+
+
+
+
+  }
+
+
+
   @keyframes puff-in-center {
     0% {
       -webkit-transform: scale(2);
@@ -95,6 +113,35 @@ const AboutStyle = styled.div`
       opacity: 1;
     }
   }
+
+  @media (min-width: 769px) {
+
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+
+    .background {
+    background-image: url(${makeup});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 88%;
+    height: 400px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 3px;
+    color: white;
+    text-align: left;
+    p {
+      padding: 60px 17px 26px 30px;
+      font-weight: 100;
+      animation: puff-in-center 0.5s;
+    }
+  }
+    }
 `;
 
 export default function About() {

@@ -9,14 +9,15 @@ const HamburgerStyle = styled.div`
   position: fixed;
   margin: 15px;
   z-index: 20;
+
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
   }
-  @media (min-width: 769px) {
+
     display: none;
-  }
+
 
   div {
     width: 2rem;
