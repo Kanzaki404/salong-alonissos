@@ -9,11 +9,16 @@ const HamburgerStyle = styled.div`
   position: fixed;
   margin: 15px;
   z-index: 20;
+
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
   }
+
+    display: none;
+
+
   div {
     width: 2rem;
     height: 0.15rem;
@@ -31,7 +36,7 @@ const HamburgerStyle = styled.div`
       transform: ${({ open }) => !open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
-`
+`;
 
 
 

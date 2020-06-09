@@ -1,16 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-
+ 
   li {
     padding: 10px;
-
+  
     font-size: 20px;
+    color:${({ location }) => location === '/' || location === '/hours' ? 'white' : 'black'};
+      font-size: 23px;
+      font-weight: 200;
+     transition: 0.5s ease-in-out;
+     
   }
+ li:hover{
+   border-bottom: 1px solid;
+   border-color:${({ location }) => location === '/' || location === '/hours' ? 'white' : 'black'} 
+   }
+ 
+  hr{
+    display:none;
+  }
+ 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: rgba(200, 200, 200, 0.93);
@@ -21,7 +35,7 @@ const Ul = styled.ul`
     height: 100%;
     width: 100%;
     padding-top: 3.5rem;
-
+    
     margin-top: 0px;
     transition: transform 0.3s ease-in-out;
 
@@ -38,11 +52,16 @@ const Ul = styled.ul`
       height: 1px;
     }
   }
+ 
+
 `;
 export default function NavItems({ open, clicked }) {
+  let location = useLocation();
   return (
-    <Ul open={open}>
+    <Ul open={open} location={location.pathname}>
       <Link
+      className="linku"
+     
         to="/"
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}

@@ -28,6 +28,13 @@ p{
     margin-top: 15px;
     margin-bottom: 15px;
 }
+@media (min-width: 769px) {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+}
 
 @keyframes puff-in-center {
     0% {

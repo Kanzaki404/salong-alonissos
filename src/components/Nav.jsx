@@ -8,22 +8,26 @@ const NavBar = styled.nav`
 
   display: flex;
   justify-content: space-between;
+  
+
 `;
 const StyledSelector = styled.select`
   padding: 10px;
+  
   border: none;
   background: transparent;
   margin: 15px;
   font-size: 20px;
   outline-style: none;
-  
-    color:${({ location }) => location === '/' || location === '/hours' ? 'white' : 'black'};
+
+  color:${({ location }) => location === '/' || location === '/hours' ? 'white' : 'black'};
   option{
-    border: none;
-    background: transparent;
-    outline-style: none;
-    color: black
+  border: none;
+  background: transparent;
+  outline-style: none;
+  color: black
   }
+
 `;
 
 export default function Nav() {

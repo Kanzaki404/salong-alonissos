@@ -19,7 +19,7 @@ export default function Services() {
       border-radius: 3px;
       margin: auto;
       width: 93%;
-      height: 201px;
+      height: 260px;
       margin-bottom: 25px;
       margin-top: 25px;
       h1 {
@@ -40,7 +40,7 @@ export default function Services() {
       border-radius: 3px;
       margin: auto;
       width: 93%;
-      height: 201px;
+      height: 260px;
       margin-bottom: 135px;
       margin-top: 25px;
       h1 {
@@ -55,13 +55,51 @@ export default function Services() {
       border: solid 1px #ccc;
       background: transparent;
       color: white;
+      margin: 1rem;
       outline-style: none;
       animation: puff-in-center 0.5s;
+      cursor: pointer;
 
     }
     hr{
         width: 80%;
     }
+
+
+    @media (min-width: 769px) {
+
+      width: 75vw;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 50px;
+
+
+      .cuttingStyling {
+
+        height: 400px;
+
+
+      }
+
+      .manicure {
+
+        height: 400px;
+
+
+      }
+
+      button {
+
+        height: 56px;
+        width: 174px;
+        font-size: 1.3rem;
+
+      }
+
+
+    }
+
 
 
     @keyframes puff-in-center {
