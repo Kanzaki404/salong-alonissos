@@ -7,6 +7,7 @@ import LandingPage from './pages/LandingPage'
 import Services from './pages/Services'
 import Prices from './pages/Prices'
 import OpeningHours from './pages/OpeningHours'
+import Gallery from './pages/Gallery'
 import About from './pages/About'
 import ScrollToTop from './scrollToTop'
 
@@ -22,6 +23,7 @@ function App() {
                 <Route path = '/services' component={Services} />
                 <Route path = '/prices' component={Prices} />
                 <Route path = '/hours' component={OpeningHours} />
+                <Route path = '/gallery' component={Gallery} />
                 <Route path = '/about' component={About} />
         </Switch>
         <Footer/>

@@ -65,7 +65,7 @@ export default function Services() {
       }
     }
     hr {
-      width: 80%;
+      width: 300px;
     }
 
     @media (min-width: 769px) {
@@ -76,11 +76,11 @@ export default function Services() {
       margin-top: 50px;
 
       .cuttingStyling {
-        height: 400px;
+        height: 307px;
       }
 
       .manicure {
-        height: 400px;
+        height: 307px;
       }
 
       button {
@@ -89,6 +89,22 @@ export default function Services() {
         font-size: 1.3rem;
       }
     }
+
+    @media (min-width: 1304px) {
+
+          .cuttingStyling{
+
+            height: 352px;
+          }
+
+          .manicure {
+                  height: 352px;
+          }
+    }
+
+
+
+
 
     @keyframes puff-in-center {
       0% {

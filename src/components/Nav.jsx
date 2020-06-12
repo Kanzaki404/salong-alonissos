@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 const NavBar = styled.nav`
   height: 0vh;
   background: Transparent;
-
   display: flex;
   justify-content: space-between;
 `;

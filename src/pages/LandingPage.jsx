@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import image from "../assets/hairstyle-fin.png";
-import desktopImg from "../assets/dektop.jpg";
+import desktopImg from "../assets/clearedSalon.png";
 import logo from "../assets/salonLogo.svg";
 import { Link } from "react-router-dom";
 const LandingPageStyle = styled.div`

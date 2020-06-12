@@ -92,6 +92,14 @@ export default function NavItems({ open, clicked }) {
         <hr />
       </Link>
       <Link
+        to="/gallery"
+        onClick={() => clicked(!open)}
+        style={{ textDecoration: "none" }}
+      >
+        <li>Gallery</li>
+        <hr />
+      </Link>
+      <Link
         to="/about"
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}

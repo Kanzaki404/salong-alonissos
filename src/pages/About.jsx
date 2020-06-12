@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import makeup from "../assets/Make-up.jpg";
+import makeup from "../assets/alonissos.jpg";
 import worker1 from "../assets/worker1.png";
 import worker2 from "../assets/worker2.png";
-
 const AboutStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -12,12 +11,14 @@ const AboutStyle = styled.div`
 
   .background {
     background-image: url(${makeup});
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     margin: auto;
-    width: 88%;
-    height: 200px;
+    width: 100%;
+    height: 400px;
     margin-bottom: 25px;
     margin-top: 25px;
     border-radius: 3px;
@@ -47,33 +48,50 @@ const AboutStyle = styled.div`
   .workerOne {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 15px;
 
+    width: 88%;
+    margin: auto;
+    margin-bottom: 80px;
     p {
       text-align: left;
       padding-left: 19px;
       padding-right: 5px;
+      margin: auto;
     }
   }
 
   .workerTwo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 15px;
+
     padding-bottom: 20px;
+    width: 88%;
+    margin: auto;
+    margin-bottom: 80px;
     p {
       text-align: start;
       padding-left: 15px;
+      margin: auto;
     }
   }
   img {
     margin: auto;
     border-radius: 3px;
+    width: 100%;
+    height: auto;
   }
   hr {
     width: 87%;
   }
 
+  .imageWrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+  }
   @media (min-width: 769px) {
     width: 70vw;
     display: flex;
@@ -106,7 +124,7 @@ const AboutStyle = styled.div`
     margin: auto;
     margin-top: 50px;
 
-    .background {
+    /* .background {
       background-image: url(${makeup});
       background-position: center;
       background-repeat: no-repeat;
@@ -124,7 +142,7 @@ const AboutStyle = styled.div`
         font-weight: 100;
         animation: puff-in-center 0.5s;
       }
-    }
+    } */
   }
 `;
 
@@ -145,21 +163,26 @@ export default function About() {
 
       <h1 className="staff">STAFF</h1>
       <div className="workerOne">
-        <img src={worker1} alt="" />
+        <div className="imageWrapper">
+          <img src={worker1} alt="" />
+        </div>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
         </p>
       </div>
-      <hr />
+
       <div className="workerTwo">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
         </p>
-        <img src={worker2} alt="" />
+        <div className="imageWrapper">
+          <img src={worker2} alt="" />
+        </div>
       </div>
     </AboutStyle>
   );
