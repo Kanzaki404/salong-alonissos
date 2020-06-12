@@ -13,16 +13,19 @@ const StyledGalery = styled.div`
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px; */
-  display: inline-grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 200px 200px 200px;
-  grid-gap: 3px;
-  justify-items: center;
-  
 
+  text-align: center;
+  .wrapper {
+    display: inline-grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 3px;
+    justify-items: center;
+    align-items: center;
+  }
   .background {
     justify-self: center;
-    height:300px;
+    height: 300px;
     width: 200px;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,10 +34,9 @@ const StyledGalery = styled.div`
     border-radius: 3px;
     transition: all 0.2s ease-in-out;
 
-        &:hover {
-        transform: scale(1.2);
-}
-
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .img1 {
     background-image: url(${photo1});
@@ -62,17 +64,19 @@ const StyledGalery = styled.div`
 export default function Gallery() {
   return (
     <StyledGalery>
+      <div className="wrapper">
         <div className="background">
-        <h1>Gallery</h1>
-        <p>by Maria's Salon</p>
+          <h1>Gallery</h1>
+          <p>by Maria's Salon</p>
         </div>
-      <div className="img1 background"></div>
-      <div className="img2 background"></div>
-      <div className="img3 background"></div>
-      <div className="img4 background"></div>
-      <div className="img5 background"></div>
-      <div className="img6 background"></div>
-      <div className="img8 background"></div>
+        <div className="img1 background"></div>
+        <div className="img2 background"></div>
+        <div className="img3 background"></div>
+        <div className="img4 background"></div>
+        <div className="img5 background"></div>
+        <div className="img6 background"></div>
+        <div className="img8 background"></div>
+      </div>
     </StyledGalery>
   );
 }

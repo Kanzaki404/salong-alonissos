@@ -11,7 +11,7 @@ const LandingPageStyle = styled.div`
   letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(${image});
+  background-image: url(${desktopImg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
