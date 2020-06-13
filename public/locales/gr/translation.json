@@ -1,8 +1,79 @@
 {
-    "First":{
-        "1": "Ευχαριστώ"
+    
+    "Nav":{
+        "home": "Σπίτι",
+        "services" : "Υπηρεσίες",
+        "prices" : "τιμές",
+        "openingHours" : "Εργάσιμες ώρες",
+        "gallery" : "πινακοθήκη",
+        "aboutUs" : "σχετικά με εμάς"
     },
-    "Second":{
-        "2": "δεύτερη παράγραφος"
+    "Footer": {
+        "visitUs": "Επισκέψου μας",
+        "hours" : "Ωρες",
+        "monFri" : "Δευτέρα Παρασκευή",
+        "monFriTime" : "8:00-19:00",
+        "satSun" : "σαββατοκύριακο",
+        "satSunTime" : "9:00-22:00",
+        "phone" : "Τηλέφωνο :",
+        "address": "Διεύθυνση :"
+
+    },
+    "LandingPage":{
+
+        "welcome": "Καλωσόρισες στο",
+        "offer": "Προσφέρουμε στους πελάτες μας την πιο πρόσφατη περιποίηση μαλλιών, περιποίηση, στυλ και πολλά άλλα!",
+        "salon": "Σαλόνι της Μαρίας στην Αλόννησο",
+        "ourServices" : "Οι Υπηρεσίες μας"
+
+    },
+    "Opening": {
+
+        "hours": "Ωρες",
+        "mon": "Δευτέρα",
+        "tues": "Τρίτη",
+        "wed": "Τετάρτη",
+        "thu": "Πέμπτη",
+        "fri" : "Παρασκευή",
+        "sat" : "Σάββατο",
+        "sun" : "Κυριακή"
+
+    },
+    "Prices": {
+
+        "prices": "Τιμές",
+        "cut": "Κοπή & Στυλ",
+        "full": "Γεμάτο κεφάλι",
+        "half": "Μισό κεφάλι",
+        "color": "Χρώμα",
+        "gloss": "Στιλπνότητα",
+        "single": "Μονό γυαλιστερό",
+        "mani": "Μανικιούρ",
+        "sharp": "Ακόνισμα",
+        "nailP": "Ζωγραφική νυχιών",
+        "nailE": "Επεκτάσεις νυχιών"
+
+    },
+
+    "Services": {
+
+            "services": "Υπηρεσίες",
+            "cut": "Κοπή & Στυλ",
+            "prices": "Τιμές",
+            "mani": "Μανικιούρ"
+    },
+     "AboutUs" : {
+
+        "about": "About Maria's",
+        "hair": "Σχετικά με το σαλόνι της Μαρίας",
+        "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "staff":"ΠΡΟΣΩΠΙΚΟ"
+    },
+
+    "Gallery" : {
+        "gallery": "Εκθεσιακός χώρος",
+        "byM" : "από το Maria's Salon"
+
     }
+
 }

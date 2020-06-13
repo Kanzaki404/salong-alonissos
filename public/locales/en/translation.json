@@ -1,8 +1,82 @@
 {
-    "First":{
-        "1": "thanks"
+    
+    "Nav":{
+        "home": "Home",
+        "services" : "Services",
+        "prices" : "Prices",
+        "openingHours" : "Opening hours",
+        "gallery" : "Gallery",
+        "aboutUs" : "About Us"
     },
-    "Second":{
-        "2": "secondParagraph"
+    "Footer": {
+        "visitUs": "Visit Us",
+        "hours" : "Hours",
+        "monFri" : "Mon - Fri",
+        "monFriTime" : "8:00-19:00",
+        "satSun" : "Sat - Sun",
+        "satSunTime" : "9:00-22:00",
+        "phone" : "Phone :",
+        "address": "Address :"
+
+    },
+    "LandingPage":{
+
+        "welcome": "Welcome To",
+        "offer": "We offer our customers the latest within haircare, grooming, styling and much more!",
+        "salon": "Maria’s Salon in Alonissos",
+        "ourServices" : "Our Services"
+
+    },
+    "Opening": {
+
+        "hours": "Hours",
+        "mon": "Monday",
+        "tues": "Tuesday",
+        "wed": "Wednesday",
+        "thu": "Thursday",
+        "fri" : "Friday",
+        "sat" : "Saturday",
+        "sun" : "Sunday"
+
+    },
+    "Prices": {
+
+        "prices": "Prices",
+        "cut": "Cutting & Styling",
+        "full": "Full Head",
+        "half": "Half Head",
+        "color": "Color",
+        "gloss": "Gloss",
+        "single": "Single Gloss",
+        "mani": "Manicure",
+        "sharp": "Sharpening",
+        "nailP": "Nail Painting",
+        "nailE": "Nail Extentions"
+
+    },
+
+    "Services": {
+
+            "services": "Services",
+            "cut": "Cutting & Styling",
+            "prices": "Prices",
+            "mani": "Manicure"
+    },
+
+    "AboutUs" : {
+
+        "about": "About Maria's",
+        "hair": "Maria's Hair Salon",
+        "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "staff":"STAFF"
+
+    },
+
+    "Gallery" : {
+        "gallery": "Gallery",
+        "byM" : "by Maria's Salon"
+
     }
+
+
 }

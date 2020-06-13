@@ -63,18 +63,14 @@ const StyledGalery = styled.div`
 `;
 
 export default function Gallery() {
-  const {t, i18n} = useTranslation()
-  function evento(lang){
-    i18n.changeLanguage(lang)
-    console.log('eegegfa')
-  }
+  const {t} = useTranslation()
+  
   return (
     <StyledGalery>
       <div className="wrapper">
         <div className="background">
-          <h1>{t('First.1')}</h1>
-          <h1>{t('Second.2')}</h1>
-          <p>by Maria's Salon</p>
+          <h1>{t('Gallery.gallery')}</h1>
+          <p>{t('Gallery.byM')}</p>
         </div>
         <div className="img1 background"></div>
         <div className="img2 background"></div>
@@ -84,8 +80,6 @@ export default function Gallery() {
         <div className="img6 background"></div>
         <div className="img8 background"></div>
       </div>
-      <button onClick={()=>evento('en')}>EN</button>
-      <button onClick={()=>evento('gr')}>GR</button>
     </StyledGalery>
   );
 }

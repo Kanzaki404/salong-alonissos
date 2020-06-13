@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../assets/chair.png";
 import styled from "styled-components";
+import {useTranslation} from 'react-i18next'
 export default function OpeningHours() {
   const Hours = styled.div`
     @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -67,36 +68,37 @@ export default function OpeningHours() {
     }
   `;
 
+  const { t } = useTranslation();
   return (
     <Hours>
       <React.Fragment className="wrapper">
-        <h1>Hours</h1>
+        <h1>{t('Opening.hours')}</h1>
         <div>
-          <p>Monday</p>
+          <p>{t('Opening.mon')}</p>
           <p>08:00-19:00</p>
         </div>
         <div>
-          <p>Tuesday</p>
+          <p>{t('Opening.tues')}</p>
           <p>08:00-19:00</p>
         </div>
         <div>
-          <p>Wednesday</p>
+          <p>{t('Opening.wed')}</p>
           <p>08:00-19:00</p>
         </div>
         <div>
-          <p>Thursday</p>
+          <p>{t('Opening.thu')}</p>
           <p>08:00-19:00</p>
         </div>
         <div>
-          <p>Friday</p>
+          <p>{t('Opening.fri')}</p>
           <p>08:00-19:00</p>
         </div>
         <div>
-          <p>Saturday</p>
+          <p>{t('Opening.sat')}</p>
           <p>08:00-19:00</p>
         </div>
         <div>
-          <p>Sunday</p>
+          <p>{t('Opening.sun')}</p>
           <p>08:00-19:00</p>
         </div>
       </React.Fragment>

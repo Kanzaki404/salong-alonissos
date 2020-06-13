@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import {useTranslation} from 'react-i18next'
 const StyledPrices = styled.div`
   padding: 50px;
   h1 {
@@ -52,38 +52,40 @@ const StyledPrices = styled.div`
   }
 `;
 export default function Prices() {
+  const {t} = useTranslation()
+ 
   return (
     <StyledPrices>
-      <h1>Prices</h1>
-      <h2>Cutting & Styling</h2>
+      <h1> {t('Prices.prices')}</h1>
+      <h2>{t('Prices.cut')}</h2>
       <div>
-        <p>Full Head</p>
+        <p>{t('Prices.full')}</p>
         <p>€10</p>
       </div>
       <div>
-        <p>Half Head</p>
+        <p>{t('Prices.half')}</p>
         <p>€10</p>
       </div>
-      <h2>Color</h2>
+      <h2>{t('Prices.color')}</h2>
       <div>
-        <p>Gloss</p>
-        <p>€10</p>
-      </div>
-      <div>
-        <p>Single Process</p>
-        <p>€10</p>
-      </div>
-      <h2>Manicure</h2>
-      <div>
-        <p>Sharpening</p>
+        <p>{t('Prices.gloss')}</p>
         <p>€10</p>
       </div>
       <div>
-        <p>Nail Painting</p>
+        <p>{t('Prices.single')}</p>
+        <p>€10</p>
+      </div>
+      <h2>{t('Prices.mani')}</h2>
+      <div>
+        <p>{t('Prices.sharp')}</p>
         <p>€10</p>
       </div>
       <div>
-        <p>Nail extensions</p>
+        <p>{t('Prices.nailP')}</p>
+        <p>€10</p>
+      </div>
+      <div>
+        <p>{t('Prices.nailE')}</p>
         <p>€10</p>
       </div>
     </StyledPrices>

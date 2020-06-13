@@ -3,6 +3,7 @@ import styled from "styled-components";
 import haircut from "../assets/cut.png";
 import manicure from "../assets/manicure.png";
 import { Link } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
 export default function Services() {
   const StyledServices = styled.div`
     padding-top: 50px;
@@ -123,21 +124,21 @@ export default function Services() {
       }
     }
   `;
-
+const {t} = useTranslation()
   return (
     <StyledServices>
-      <h1>Services</h1>
+      <h1>{t('Services.services')}</h1>
       <div className="cuttingStyling">
-        <h1>Cutting & Styling</h1>
+        <h1>{t('Services.cut')}</h1>
         <Link to="/prices">
-          <button> Prices </button>
+          <button> {t('Services.prices')} </button>
         </Link>
       </div>
       <hr />
       <div className="manicure">
-        <h1>Manicure</h1>
+        <h1>{t('Services.mani')}</h1>
         <Link to="/prices">
-          <button> Prices </button>
+          <button>  {t('Services.prices')}</button>
         </Link>
       </div>
       <hr />

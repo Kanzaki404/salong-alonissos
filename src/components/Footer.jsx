@@ -4,7 +4,7 @@ import fb from "../assets/testSvg.svg";
 import twitter from "../assets/twitter.svg";
 import Instagram from "../assets/Instagram.svg";
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
-
+import {useTranslation} from 'react-i18next'
 function Map() {
   return (
     <GoogleMap
@@ -86,28 +86,29 @@ const MapArea = styled.div`
   padding-bottom: 15px;
 `;
 export default function Footer() {
+  const {t} = useTranslation()
   return (
     <StyledFooter>
       <VisitUs>
-        <h1>Visit Us</h1>
+        <h1>{t('Footer.visitUs')}</h1>
         <hr />
       </VisitUs>
 
       <Information>
         <div className="left-info">
           <p>Email: maria@gmail.com</p>
-          <p>Phone: +30 2223 025526</p>
-          <p>Address: Epar.Od. Patitiriou-Gerakas Patitiri 370 05</p>
+          <p>{t('Footer.phone')} +30 2223 025526</p>
+          <p>{t('Footer.address')} Epar.Od. Patitiriou-Gerakas Patitiri 370 05</p>
         </div>
         <div className="right-info">
-          <p>Hours:</p>
+          <p>{t('Footer.hours')} :</p>
           <div>
-            <p>Mon - Fri </p>
+            <p>{t('Footer.monFri')}</p>
             <p> 8:00-19:00 </p>
           </div>
           <hr />
           <div>
-            <p>Sat - Sun </p>
+            <p>{t('Footer.satSun')}</p>
             <p> 9:00-22:00 </p>
           </div>
         </div>

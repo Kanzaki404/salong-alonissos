@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
+import {useTranslation} from 'react-i18next'
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -57,6 +58,8 @@ const Ul = styled.ul`
 `;
 export default function NavItems({ open, clicked }) {
   let location = useLocation();
+  
+  const {t} = useTranslation()
   return (
     <Ul open={open} location={location.pathname}>
       <Link
@@ -65,7 +68,7 @@ export default function NavItems({ open, clicked }) {
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}
       >
-        <li>Home</li>
+        <li>{t('Nav.home')}</li>
         <hr />
       </Link>
       <Link
@@ -73,7 +76,7 @@ export default function NavItems({ open, clicked }) {
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}
       >
-        <li>Services</li>
+        <li>{t('Nav.services')}</li>
         <hr />
       </Link>
       <Link
@@ -81,7 +84,7 @@ export default function NavItems({ open, clicked }) {
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}
       >
-        <li>Prices</li>
+        <li>{t('Nav.prices')}</li>
         <hr />
       </Link>
       <Link
@@ -89,7 +92,7 @@ export default function NavItems({ open, clicked }) {
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}
       >
-        <li>Opening hours</li>
+        <li>{t('Nav.openingHours')}</li>
         <hr />
       </Link>
       <Link
@@ -97,7 +100,7 @@ export default function NavItems({ open, clicked }) {
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}
       >
-        <li>Gallery</li>
+        <li>{t('Nav.gallery')}</li>
         <hr />
       </Link>
       <Link
@@ -105,7 +108,7 @@ export default function NavItems({ open, clicked }) {
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}
       >
-        <li>About Us</li>
+        <li>{t('Nav.aboutUs')}</li>
         <hr />
       </Link>
     </Ul>

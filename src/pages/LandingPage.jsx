@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../assets/hairstyle-fin.png";
+// import image from "../assets/hairstyle-fin.png";
 import desktopImg from "../assets/clearedSalon.png";
 import logo from "../assets/salonLogo.svg";
 import { Link } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
 const LandingPageStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -161,9 +162,10 @@ const LandingPageStyle = styled.div`
 `;
 
 export default function LandingPage() {
+  const {t} = useTranslation()
   return (
     <LandingPageStyle>
-      <h1>Welcome to</h1>
+      <h1>{t('LandingPage.welcome')}</h1>
 
       <div className="logowrapper">
         <span className="logo"></span>
@@ -171,17 +173,16 @@ export default function LandingPage() {
       </div>
       <div className="wrapper">
         <div className="text">
-          "We offer our customers the latest within haircare, grooming, styling
-          and much more!"
+        {t('LandingPage.offer')}
           <br></br>
           <br></br>
-          <h4>-Maria’s Salon in Alonissos-</h4>
+          <h4>-{t('LandingPage.salon')}-</h4>
         </div>
 
         <br></br>
         <br></br>
         <Link to="/services">
-          <button className="button service-btn">Our Services</button>
+          <button className="button service-btn">{t('LandingPage.ourServices')}</button>
         </Link>
       </div>
     </LandingPageStyle>

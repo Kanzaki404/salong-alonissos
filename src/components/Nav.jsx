@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
 import { useLocation } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
 const NavBar = styled.nav`
   height: 0vh;
   background: Transparent;
@@ -27,15 +28,22 @@ const StyledSelector = styled.select`
 
 export default function Nav() {
   let location = useLocation();
+  const {i18n} = useTranslation()
+
+
+  function changeLanguageTo(lang){
+    i18n.changeLanguage(lang)
+  }
+
   return (
     <NavBar>
       <div>
         <Hamburger />
       </div>
       <div>
-        <StyledSelector location={location.pathname} name="lang" id="lang">
-          <option value="EN">EN</option>
-          <option value="GR">GR</option>
+        <StyledSelector location={location.pathname} name="lang" id="lang"  onChange={(e)=>changeLanguageTo(e.target.value)}>
+          <option value="en" >EN</option>
+          <option value="gr" >GR</option>
         </StyledSelector>
       </div>
     </NavBar>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import makeup from "../assets/alonissos.jpg";
 import worker1 from "../assets/worker1.png";
 import worker2 from "../assets/worker2.png";
+import {useTranslation} from 'react-i18next'
 const AboutStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -147,21 +148,20 @@ const AboutStyle = styled.div`
 `;
 
 export default function About() {
+  const {t} = useTranslation()
   return (
     <AboutStyle>
-      <h1>Maria's Salon</h1>
+      <h1>{t('AboutUs.about')}</h1>
 
       <div className="background">
         <p>
-          Maria's Salon <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
+        {t('AboutUs.hair')} <br />
+        {t('AboutUs.info')}
         </p>
       </div>
       <hr />
 
-      <h1 className="staff">STAFF</h1>
+      <h1 className="staff">{t('AboutUs.staff')}</h1>
       <div className="workerOne">
         <div className="imageWrapper">
           <img src={worker1} alt="" />
