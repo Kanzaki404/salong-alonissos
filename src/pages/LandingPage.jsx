@@ -30,30 +30,6 @@ const LandingPageStyle = styled.div`
   padding: 50px;
   font-family: "Quicksand", sans-serif;
 
-  /* h1 {
-    font-weight: 100;
-    font-size: 2rem;
-    animation: scale-in-hor-left 0.6s;
-  }
-
-  h3 {
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    margin-left: 4.5rem;
-    -webkit-text-stroke: 1px black;
-  }
-
-  h4 {
-    font-weight: lighter;
-    font-size: 1.2rem;
-  } */
-
-  /* .text {
-    font-weight: 100;
-    font-size: 1.3rem;
-    margin-top: 3rem;
-  } */
-
   .text p {
     font-family: "Quicksand", sans-serif;
   }
@@ -112,7 +88,17 @@ const LandingPageStyle = styled.div`
   .images {
     border-radius: 3px;
   }
+  @media (max-width: 990px) {
+    .wrapper {
+     display: block;
 
+    }
+
+    .text p {
+
+      padding: 9px;
+    }
+  }
   @media (min-width: 769px) {
     border-top: 80px solid #302e2e;
     border-left: 10px solid #302e2e;

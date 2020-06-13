@@ -5,9 +5,10 @@ import salon from "../assets/clearedSalonNonBlur.png";
 
 import { useTranslation } from "react-i18next";
 const AboutStyle = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   .wrapper {
-    height: 85vh;
+    min-height: 85vh;
+    
     width: 80vw;
     margin: auto;
     margin-top: 120px;
@@ -40,6 +41,13 @@ const AboutStyle = styled.div`
     height: 310px;  
     margin-top: 40px;
     border-radius: 3px;
+  }
+  @media (max-width: 769px) {
+    
+    .wrapper {
+      display: block;
+      
+    }
   }
 `;
 

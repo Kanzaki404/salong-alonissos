@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Hamburger from "./Hamburger";
 import greece from '../assets/greece.png'
 import uk from '../assets/uk.png'
-import { useLocation } from "react-router-dom";
 import {useTranslation} from 'react-i18next'
 const NavBar = styled.nav`
   height: 0vh;
@@ -29,26 +28,8 @@ const LangIcon = styled.div`
 
   `;
 
-// const StyledSelector = styled.select`
-//   padding: 10px;
-//   border: none;
-//   background: transparent;
-//   margin: 15px;
-//   font-size: 20px;
-//   outline-style: none;
-
-//   color: ${({ location }) =>
-//     location === "/" || location === "/hours" ? "white" : "black"};
-//   option {
-//     border: none;
-
-//     outline-style: none;
-//     color: black;
-//   }
-// `;
 
 export default function Nav() {
-  let location = useLocation();
   const [lang, setLang] = useState(false)
   const {i18n} = useTranslation()
 
@@ -78,7 +59,3 @@ export default function Nav() {
 }
 
 
-{/* <StyledSelector location={location.pathname} name="lang" id="lang"  onChange={(e)=>changeLanguageTo(e.target.value)}>
-          <option value="en" >EN</option>
-          <option value="gr" >GR</option>
-        </StyledSelector> */}

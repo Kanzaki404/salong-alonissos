@@ -64,6 +64,16 @@ const StyledGalery = styled.div`
   .img8 {
     background-image: url(${photo8});
   }
+
+  @media (max-width: 769px) {
+    padding: 0;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    .wrapper {
+      grid-template-columns: 200px 200px;
+      
+    }
+  }
 `;
 
 export default function Gallery() {
