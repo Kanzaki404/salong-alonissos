@@ -61,9 +61,9 @@ const Information = styled.div`
     }
   }
   @media (min-width: 769px) {
-.right-info{
-  text-align: center;
-}
+    .right-info {
+      text-align: center;
+    }
     hr {
       width: 23%;
       margin: auto;

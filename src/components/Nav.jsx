@@ -1,37 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
-import { useLocation } from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 const NavBar = styled.nav`
   height: 0vh;
   background: Transparent;
-
   display: flex;
   justify-content: space-between;
-  
-
 `;
 const StyledSelector = styled.select`
   padding: 10px;
-  
   border: none;
   background: transparent;
   margin: 15px;
   font-size: 20px;
   outline-style: none;
-
-  color:${({ location }) => location === '/' || location === '/hours' ? 'white' : 'black'};
-  option{
-  border: none;
-  background: transparent;
-  outline-style: none;
-  color: black
+  color: ${({ location }) =>
+    location === "/" || location === "/hours" ? "white" : "black"};
+  option {
+    border: none;
+    background: transparent;
+    outline-style: none;
+    color: black;
   }
-
 `;
 
 export default function Nav() {
-    let location = useLocation();
+  let location = useLocation();
   return (
     <NavBar>
       <div>
