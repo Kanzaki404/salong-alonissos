@@ -110,6 +110,7 @@ const LandingPageStyle = styled.div`
   }
 
   .images {
+    border-radius: 3px;
   }
 
   @media (min-width: 769px) {
@@ -167,12 +168,16 @@ const LandingPageStyle = styled.div`
       margin-top: 20px;
     }
   }
+
+
   img {
     height: 360px;
     width: 515px;
     margin-bottom: 35px;
     margin-top: 15px;
   }
+
+
   @keyframes scale-in-hor-left {
     0% {
       -webkit-transform: scaleX(0);
@@ -219,8 +224,8 @@ export default function LandingPage() {
             With us there is a high competence, creativity and of course a
             superb service. It is important for us that the exclusive hair care
             that we offer you also has personal advice with answers to all
-            questions regarding hair care, appearance and products.</p> 
-           
+            questions regarding hair care, appearance and products.</p>
+
             <p>
             It is our ambition that you not only feel satisfied, but also find
             that you have received the best possible treatment and service, and
@@ -229,14 +234,14 @@ export default function LandingPage() {
             work, and we place high demands on our staff in terms of knowledge,
             creativity, service level and product knowledge.
             </p>
-            
+
             <p>
             The salon, which has been around since 1985, works with the latest
             hair care in all treatment areas, and focuses on customers with high
             demands on precision and quality. The salon is very well known, and
             has its location in Epar.Od. Patitiriou-Gerakas Patitiri 370 05.
             </p>
-            
+
             <p>
             Welcome in for a free consultation
           </p>

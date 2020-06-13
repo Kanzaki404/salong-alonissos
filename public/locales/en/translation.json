@@ -1,12 +1,12 @@
 {
-    
+
     "Nav":{
         "home": "Home",
         "services" : "Services",
         "prices" : "Prices",
         "openingHours" : "Opening hours",
         "gallery" : "Gallery",
-        "aboutUs" : "About Us"
+        "aboutUs" : "Contact"
     },
     "Footer": {
         "visitUs": "Visit Us",
@@ -21,9 +21,10 @@
     },
     "LandingPage":{
 
-        "welcome": "Welcome To",
-        "offer": "We offer our customers the latest within haircare, grooming, styling and much more!",
-        "salon": "Maria’s Salon in Alonissos",
+        "text1": "Maria's Hair Salon is one of the leading hairdressing in Alonissos. With us there is a high competence, creativity and of course a superb service. It is important for us that the exclusive hair care that we offer you also has personal advice with answers to all questions regarding hair care, appearance and products.",
+        "text2": "It is our ambition that you not only feel satisfied, but also find that you have received the best possible treatment and service, and that your hair really works as you intended and as you agreed with your hairdresser. With us, only professionally trained hairdressers work, and we place high demands on our staff in terms of knowledge, creativity, service level and product knowledge.",
+        "text3": "The salon, which has been around since 1985, works with the latest hair care in all treatment areas, and focuses on customers with high demands on precision and quality. The salon is very well known, and has its location in Epar.Od. Patitiriou-Gerakas Patitiri 370 05.",
+        "welcome": "Welcome in for a free consultation",
         "ourServices" : "Our Services"
 
     },
