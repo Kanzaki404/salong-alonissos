@@ -7,6 +7,7 @@ import photo4 from "../assets/4.jpg";
 import photo5 from "../assets/5.jpg";
 import photo6 from "../assets/6.jpg";
 import photo8 from "../assets/8.jpg";
+import {useTranslation} from 'react-i18next'
 const StyledGalery = styled.div`
   padding: 150px;
   min-height: 100vh;
@@ -62,11 +63,17 @@ const StyledGalery = styled.div`
 `;
 
 export default function Gallery() {
+  const {t, i18n} = useTranslation()
+  function evento(lang){
+    i18n.changeLanguage(lang)
+    console.log('eegegfa')
+  }
   return (
     <StyledGalery>
       <div className="wrapper">
         <div className="background">
-          <h1>Gallery</h1>
+          <h1>{t('First.1')}</h1>
+          <h1>{t('Second.2')}</h1>
           <p>by Maria's Salon</p>
         </div>
         <div className="img1 background"></div>
@@ -77,6 +84,8 @@ export default function Gallery() {
         <div className="img6 background"></div>
         <div className="img8 background"></div>
       </div>
+      <button onClick={()=>evento('en')}>EN</button>
+      <button onClick={()=>evento('gr')}>GR</button>
     </StyledGalery>
   );
 }
