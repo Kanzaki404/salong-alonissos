@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import {useTranslation} from 'react-i18next'
+import logo from "../assets/salonLogo.svg";
+import logoB from "../assets/salonLogo-black.svg";
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -27,7 +29,17 @@ const Ul = styled.ul`
   hr {
     display: none;
   }
-
+  .logo {
+    background-image: url(${({ location }) => location === "/" || location === "/hours" ? logo : logoB});
+    width: 4rem;
+    padding-bottom: 49px;
+    padding-right: 10px;
+    height: 5rem;
+    background-repeat: no-repeat;
+    margin-bottom: -5rem;
+    display: block;
+    margin-top: 5px;
+  }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: rgba(200, 200, 200, 0.93);
@@ -58,7 +70,7 @@ const Ul = styled.ul`
 `;
 export default function NavItems({ open, clicked }) {
   let location = useLocation();
-  
+
   const {t} = useTranslation()
   return (
     <Ul open={open} location={location.pathname}>
@@ -68,7 +80,9 @@ export default function NavItems({ open, clicked }) {
         onClick={() => clicked(!open)}
         style={{ textDecoration: "none" }}
       >
-        <li>{t('Nav.home')}</li>
+       <div className="logowrapper">
+        <span className="logo"></span>
+      </div>
         <hr />
       </Link>
       <Link

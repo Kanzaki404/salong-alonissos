@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import makeup from "../assets/alonissos.jpg";
+import makeup from "../assets/alonissos.jpeg";
 import worker1 from "../assets/worker1.png";
 import worker2 from "../assets/worker2.png";
 import {useTranslation} from 'react-i18next'
@@ -15,7 +15,7 @@ const AboutStyle = styled.div`
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     margin: auto;
     width: 100%;

@@ -1,20 +1,20 @@
 {
-    
+
     "Nav":{
-        "home": "Σπίτι",
+        "home": "Αρχική",
         "services" : "Υπηρεσίες",
-        "prices" : "τιμές",
+        "prices" : "Τιμές",
         "openingHours" : "Εργάσιμες ώρες",
-        "gallery" : "πινακοθήκη",
-        "aboutUs" : "σχετικά με εμάς"
+        "gallery" : "Συλλογή",
+        "aboutUs" : "Σχετικά με εμάς"
     },
     "Footer": {
         "visitUs": "Επισκέψου μας",
         "hours" : "Ωρες",
         "monFri" : "Δευτέρα Παρασκευή",
-        "monFriTime" : "8:00-19:00",
-        "satSun" : "σαββατοκύριακο",
-        "satSunTime" : "9:00-22:00",
+        "monFriTime" : "8:00-22:00",
+        "satSun" : "Σαββατοκύριακο",
+        "satSunTime" : "9:00-21:00",
         "phone" : "Τηλέφωνο :",
         "address": "Διεύθυνση :"
 
@@ -23,8 +23,8 @@
 
         "welcome": "Καλωσόρισες στο",
         "offer": "Προσφέρουμε στους πελάτες μας την πιο πρόσφατη περιποίηση μαλλιών, περιποίηση, στυλ και πολλά άλλα!",
-        "salon": "Σαλόνι της Μαρίας στην Αλόννησο",
-        "ourServices" : "Οι Υπηρεσίες μας"
+        "salon": "Κομμωτήριο 'Μαρια' στην Αλόννησο",
+        "ourServices" : "Υπηρεσίες"
 
     },
     "Opening": {
@@ -43,13 +43,13 @@
 
         "prices": "Τιμές",
         "cut": "Κοπή & Στυλ",
-        "full": "Γεμάτο κεφάλι",
-        "half": "Μισό κεφάλι",
+        "full": "Γεμάτο κεφάλι LOL",
+        "half": "Μισό κεφάλι LMAO",
         "color": "Χρώμα",
         "gloss": "Στιλπνότητα",
         "single": "Μονό γυαλιστερό",
         "mani": "Μανικιούρ",
-        "sharp": "Ακόνισμα",
+        "sharp": "Ακόνισμα ROFLMAO",
         "nailP": "Ζωγραφική νυχιών",
         "nailE": "Επεκτάσεις νυχιών"
 
@@ -65,8 +65,8 @@
      "AboutUs" : {
 
         "about": "About Maria's",
-        "hair": "Σχετικά με το σαλόνι της Μαρίας",
-        "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "hair": "",
+        "info" : "",
         "staff":"ΠΡΟΣΩΠΙΚΟ"
     },
 

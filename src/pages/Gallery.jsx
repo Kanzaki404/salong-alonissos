@@ -6,6 +6,7 @@ import photo3 from "../assets/3.jpg";
 import photo4 from "../assets/4.jpg";
 import photo5 from "../assets/5.jpg";
 import photo6 from "../assets/6.jpg";
+import photo7 from "../assets/7.jpg";
 import photo8 from "../assets/8.jpg";
 import {useTranslation} from 'react-i18next'
 const StyledGalery = styled.div`
@@ -57,6 +58,9 @@ const StyledGalery = styled.div`
   .img6 {
     background-image: url(${photo6});
   }
+  .img7 {
+    background-image: url(${photo7});
+  }
   .img8 {
     background-image: url(${photo8});
   }
@@ -64,7 +68,7 @@ const StyledGalery = styled.div`
 
 export default function Gallery() {
   const {t} = useTranslation()
-  
+
   return (
     <StyledGalery>
       <div className="wrapper">
@@ -72,12 +76,14 @@ export default function Gallery() {
           <h1>{t('Gallery.gallery')}</h1>
           <p>{t('Gallery.byM')}</p>
         </div>
+
         <div className="img1 background"></div>
         <div className="img2 background"></div>
         <div className="img3 background"></div>
         <div className="img4 background"></div>
         <div className="img5 background"></div>
         <div className="img6 background"></div>
+        <div className="img7 background"></div>
         <div className="img8 background"></div>
       </div>
     </StyledGalery>

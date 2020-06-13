@@ -5,7 +5,9 @@ import {useTranslation} from 'react-i18next'
 export default function OpeningHours() {
   const Hours = styled.div`
     @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-
+    border-top: 80px solid #302e2e;
+    border-left: 10px solid #302e2e;
+    border-right: 10px solid #302e2e;
     background-image: url(${image});
     background-position: center;
     background-repeat: no-repeat;
