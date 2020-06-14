@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import image from "../assets/hairstyle-fin.png";
-import desktopImg from "../assets/clearedSalon.png";
+import desktopImg from "../assets/clearedSalon-min.png";
 // import alonissos from "../assets/alonissos.jpeg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
