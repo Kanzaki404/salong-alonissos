@@ -7,7 +7,7 @@ const HamburgerStyle = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  margin: 15px;
+  margin: 29px;
   z-index: 20;
 
   @media (max-width: 768px) {

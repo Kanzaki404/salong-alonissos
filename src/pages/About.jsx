@@ -24,7 +24,7 @@ const AboutStyle = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${alonissos});
-  padding-top: 50px;
+  padding-top: 20px;
   min-height: 105vh;
   border-top: 80px solid #302e2e;
 
@@ -71,7 +71,7 @@ const AboutStyle = styled.div`
     color: white;
     text-align:center;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   @media (max-width: 769px) {
     .wrapper {
