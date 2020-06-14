@@ -12,7 +12,7 @@ const NavBar = styled.nav`
 `;
 const LangIcon = styled.div`
 
-   background-image: url(${({ lang }) => !lang  ? greece : uk});
+   background-image: url(${({ lang1 }) => lang1 === "false"  ? greece : uk});
    background-position: center;
     background-repeat: no-repeat;
     height: 30px;
@@ -34,15 +34,14 @@ export default function Nav() {
   const {i18n} = useTranslation()
 
 
-  function changeLanguageTo(lang){
+  function changeLanguageTo(langug){
 
-    if(lang){
+    if(langug){
       i18n.changeLanguage('en')
     }else{
       i18n.changeLanguage('gr')
     }
     setLang(!lang)
-
 
   }
 
@@ -52,7 +51,7 @@ export default function Nav() {
         <Hamburger />
       </div>
       <div>
-        <LangIcon onClick={()=>changeLanguageTo(lang)} lang={lang}></LangIcon>
+        <LangIcon onClick={()=>changeLanguageTo(lang)} lang1={lang.toString()}></LangIcon>
       </div>
     </NavBar>
   );

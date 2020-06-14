@@ -33,12 +33,16 @@ const AboutStyle = styled.div`
     background: rgba(0, 0, 0, 0.7);
     width: 80vw;
     margin: auto;
-   
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 25px;
 
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 2.5px;
+    border-top-right-radius: 2.5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   .imageTop {
     background-image: url(${salon});
@@ -69,7 +73,7 @@ const AboutStyle = styled.div`
   }
   h1{
     color: white;
-    text-align:center;
+
     margin: 0;
     margin-bottom: 20px;
   }
@@ -87,9 +91,11 @@ export default function About() {
   const { t } = useTranslation();
   return (
     <AboutStyle>
-      <h1>{t('AboutUs.contact')}</h1>
+
       <div className="wrapper">
+
         <div className="topLeft">
+        <h1>{t('AboutUs.contact')}</h1>
           <p>{t('AboutUs.location')}</p>
           <p>
           {t('AboutUs.Opening')} <br />

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import haircut from "../assets/cut.png";
 import manicure from "../assets/manicure.png";
 import { Link } from "react-router-dom";
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from "react-i18next";
 export default function Services() {
   const StyledServices = styled.div`
     padding-top: 50px;
@@ -92,20 +92,31 @@ export default function Services() {
     }
 
     @media (min-width: 1304px) {
+      .cuttingStyling {
+        height: 352px;
+      }
 
-          .cuttingStyling{
-
-            height: 352px;
-          }
-
-          .manicure {
-                  height: 352px;
-          }
+      .manicure {
+        height: 352px;
+      }
     }
 
+    @media (max-width: 389px) {
+      .cuttingStyling {
+        height: 221px;
 
+        h1 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .manicure {
+      height: 221px;
 
-
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
 
     @keyframes puff-in-center {
       0% {
@@ -124,21 +135,21 @@ export default function Services() {
       }
     }
   `;
-const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <StyledServices>
-      <h1>{t('Services.services')}</h1>
+      <h1>{t("Services.services")}</h1>
       <div className="cuttingStyling">
-        <h1>{t('Services.cut')}</h1>
+        <h1>{t("Services.cut")}</h1>
         <Link to="/prices">
-          <button> {t('Services.prices')} </button>
+          <button> {t("Services.prices")} </button>
         </Link>
       </div>
       <hr />
       <div className="manicure">
-        <h1>{t('Services.mani')}</h1>
+        <h1>{t("Services.mani")}</h1>
         <Link to="/prices">
-          <button>  {t('Services.prices')}</button>
+          <button> {t("Services.prices")}</button>
         </Link>
       </div>
       <hr />

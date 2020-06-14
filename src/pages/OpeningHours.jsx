@@ -73,7 +73,7 @@ export default function OpeningHours() {
   const { t } = useTranslation();
   return (
     <Hours>
-      <React.Fragment className="wrapper">
+      <React.Fragment >
         <h1>{t('Opening.hours')}</h1>
         <div>
           <p>{t('Opening.mon')}</p>
