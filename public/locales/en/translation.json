@@ -6,7 +6,7 @@
         "prices" : "Prices",
         "openingHours" : "Opening hours",
         "gallery" : "Gallery",
-        "aboutUs" : "Contact"
+        "aboutUs" : "Contacts"
     },
     "Footer": {
         "visitUs": "Visit Us",
@@ -65,11 +65,16 @@
     },
 
     "AboutUs" : {
-
-        "about": "About Maria's",
-        "hair": "Maria's Hair Salon",
-        "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "staff":"STAFF"
+        "contact" : "Contact",
+        "location": "Epar.Od. Patitiriou-Gerakas Patitiri 370 05",
+        "Opening": "Our opening hours:",
+        "mon-fre" : "Monday-Friday:",
+        "sat": "Saturday: 11.00 - 16.00",
+        "sun":" Sunday: Closed",
+        "tel": "Tel: 08-611 11 60, 08-611 67 27",
+        "epost" : "maria@gmail.com",
+        "obs" : "We do not accept bookings through E-post",
+        "visit": "Visit Us!"
 
     },
 

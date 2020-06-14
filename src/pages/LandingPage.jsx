@@ -30,9 +30,6 @@ const LandingPageStyle = styled.div`
   padding: 50px;
   font-family: "Quicksand", sans-serif;
 
-  .text p {
-    font-family: "Quicksand", sans-serif;
-  }
 
   button {
     border: none;
@@ -50,7 +47,7 @@ const LandingPageStyle = styled.div`
   }
 
   .service-btn {
-    background-color: rgb(48, 46, 46);
+    background-color: rgba(48, 46, 46, 0.3);
     border: 1px solid white;
     border-radius: 3px;
     transition: all 0.2s ease-in-out;
@@ -59,7 +56,8 @@ const LandingPageStyle = styled.div`
     top: 90%;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      background-color: rgba(48, 46, 46, 0.9);
     }
   }
 
@@ -91,13 +89,11 @@ const LandingPageStyle = styled.div`
   @media (max-width: 990px) {
     .wrapper {
      display: block;
+     
 
     }
 
-    .text p {
 
-      padding: 9px;
-    }
   }
   @media (min-width: 769px) {
     border-top: 80px solid #302e2e;
@@ -126,7 +122,7 @@ const LandingPageStyle = styled.div`
       text-align: center;
       min-height: 75vh;
       height: auto;
-      background: white;
+      background: rgba(0, 0, 0, 0.5215686274509804);
       border-radius: 5px;
     }
 
@@ -135,7 +131,8 @@ const LandingPageStyle = styled.div`
       text-align: left;
       line-height: 25px;
       p {
-        color: #696969;
+
+        color: white;
       }
     }
 
@@ -206,30 +203,18 @@ export default function LandingPage() {
       <div className="wrapper">
         <div className="text">
           <p>
-            Maria's Hair Salon is one of the leading hairdressing in Alonissos.
-            With us there is a high competence, creativity and of course a
-            superb service. It is important for us that the exclusive hair care
-            that we offer you also has personal advice with answers to all
-            questions regarding hair care, appearance and products.</p>
+          {t("LandingPage.text1")}</p>
 
             <p>
-            It is our ambition that you not only feel satisfied, but also find
-            that you have received the best possible treatment and service, and
-            that your hair really works as you intended and as you agreed with
-            your hairdresser. With us, only professionally trained hairdressers
-            work, and we place high demands on our staff in terms of knowledge,
-            creativity, service level and product knowledge.
+            {t("LandingPage.text2")}
             </p>
 
             <p>
-            The salon, which has been around since 1985, works with the latest
-            hair care in all treatment areas, and focuses on customers with high
-            demands on precision and quality. The salon is very well known, and
-            has its location in Epar.Od. Patitiriou-Gerakas Patitiri 370 05.
+            {t("LandingPage.text3")}
             </p>
 
             <p>
-            Welcome in for a free consultation
+            {t("LandingPage.welcome")}
           </p>
           <Link to="/services">
             <button className="button service-btn">

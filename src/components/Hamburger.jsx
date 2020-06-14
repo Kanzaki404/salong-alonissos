@@ -22,7 +22,7 @@ const HamburgerStyle = styled.div`
   div {
     width: 2rem;
     height: 0.15rem;
-    background-color:${({ location }) => location === '/' || location === '/hours' ? 'white' : 'black'};
+    background-color:${({ location }) => location === '/' || location === '/hours' || location === "/about" ? 'white' : 'black'};
 
     transform-origin: 1px;
     transition: all 0.3s linear;

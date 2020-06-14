@@ -3,20 +3,8 @@ import styled from "styled-components";
 import fb from "../assets/testSvg.svg";
 import twitter from "../assets/twitter.svg";
 import Instagram from "../assets/Instagram.svg";
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 import {useTranslation} from 'react-i18next'
-function Map() {
-  return (
-    <GoogleMap
-      defaultZoom={15}
-      defaultCenter={{ lat: 39.146422, lng: 23.864568 }}
-      Marker
-      position={{ lat: 39.146422, lng: 23.864568 }}
-    />
-  );
-}
 
-const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 const StyledFooter = styled.div`
   background-color: #302e2e;
@@ -81,10 +69,6 @@ const SocialMedia = styled.div`
   }
 `;
 
-const MapArea = styled.div`
-  margin: 15px 15px 0px 15px;
-  padding-bottom: 15px;
-`;
 export default function Footer() {
   const {t} = useTranslation()
   return (
@@ -118,15 +102,6 @@ export default function Footer() {
         <img src={twitter} alt="instagram" />
         <img src={Instagram} alt="twitter" />
       </SocialMedia>
-
-      <MapArea>
-        <WrappedMap
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
-      </MapArea>
     </StyledFooter>
   );
 }

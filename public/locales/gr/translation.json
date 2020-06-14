@@ -64,11 +64,16 @@
             "mani": "Μανικιούρ"
     },
      "AboutUs" : {
-
-        "about": "About Maria's",
-        "hair": "",
-        "info" : "",
-        "staff":"ΠΡΟΣΩΠΙΚΟ"
+        "contact" : "Επικοινωνία",
+        "location": " Epar.Od. Patitiriou-Gerakas Patitiri 370 05",
+        "Opening": "Οι ώρες λειτουργίας μας:",
+        "mon-fre" : "Δευτέρα-Παρασκευή:",
+        "sat": "Σάββατο: 11.00 - 16.00",
+        "sun":"Κυριακή: Κλειστό",
+        "tel": "Τηλ: 08-611 11 60, 08-611 67 27",
+        "epost" : "maria@gmail.com",
+        "obs" : "Δεν δεχόμαστε κρατήσεις μέσω E-post",
+        "visit": "Επισκέψου μας!"
     },
 
     "Gallery" : {

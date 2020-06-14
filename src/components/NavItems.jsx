@@ -15,7 +15,7 @@ const Ul = styled.ul`
 
     font-size: 20px;
     color: ${({ location }) =>
-      location === "/" || location === "/hours" ? "white" : "black"};
+      location === "/" || location === "/hours" || location === "/about" ? "white" : "black"};
     font-size: 23px;
     font-weight: 200;
     transition: 0.5s ease-in-out;
@@ -23,14 +23,14 @@ const Ul = styled.ul`
   li:hover {
     border-bottom: 1px solid;
     border-color: ${({ location }) =>
-      location === "/" || location === "/hours" ? "white" : "black"};
+      location === "/" || location === "/hours" || location === "/about" ? "white" : "black"};
   }
 
   hr {
     display: none;
   }
   .logo {
-    background-image: url(${({ location }) => location === "/" || location === "/hours" ? logo : logoB});
+    background-image: url(${({ location }) => location === "/" || location === "/hours" || location === "/about" ? logo : logoB});
     width: 4rem;
     padding-bottom: 49px;
     padding-right: 10px;
