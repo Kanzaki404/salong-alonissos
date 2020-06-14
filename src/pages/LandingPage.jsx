@@ -105,7 +105,7 @@ export default function LandingPage() {
         <div className="topLeft">
         <h1>{t("LandingPage.welcome1")}</h1>
           <p>{t("LandingPage.text1")}</p>
-          <Link to="/prices">
+          <Link to="/services">
 
             <button> {t("LandingPage.ourServices")}</button>
           </Link>
