@@ -18,7 +18,6 @@ function Map() {
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
-
 const AboutStyle = styled.div`
   background-position: right;
   background-repeat: no-repeat;
@@ -31,7 +30,7 @@ const AboutStyle = styled.div`
   .wrapper {
     min-height: 85vh;
     background: rgba(0, 0, 0, 0.7);
-    width: 80vw;
+    width: 75vw;
     margin: auto;
 
     display: grid;
@@ -45,13 +44,15 @@ const AboutStyle = styled.div`
     border-bottom-right-radius: 5px;
   }
   .imageTop {
-    background-image: url(${salon});
+    /* background-image: url(${salon});
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 310px;
-    margin-top: 40px;
-    border-radius: 3px;
+    background-size: cover; */
+    img{
+      height: 500px;
+      width: 100%;
+      
+    }
   }
   .topLeft {
     margin: 25px;
@@ -77,50 +78,67 @@ const AboutStyle = styled.div`
     margin: 0;
     margin-bottom: 20px;
   }
+  @media (max-width: 1024px) {
+   
+    .imageTop {
+    
+    img{
+      height: 350px;
+      width: 100%;
+      
+    }
+  }
+  }
   @media (max-width: 769px) {
     .wrapper {
       display: block;
     }
+    .imageTop {
+    
+    img{
+      height: 300px;
+      width: 100%;
+      
+    }
+  }
   }
 `;
-const MapArea = styled.div`
-
-
-`;
+const MapArea = styled.div``;
 export default function About() {
   const { t } = useTranslation();
   return (
     <AboutStyle>
-
       <div className="wrapper">
-
         <div className="topLeft">
-        <h1>{t('AboutUs.contact')}</h1>
-          <p>{t('AboutUs.location')}</p>
+          <h1>{t("AboutUs.contact")}</h1>
+          <p>{t("AboutUs.location")}</p>
           <p>
-          {t('AboutUs.Opening')} <br />
-          {t('AboutUs.mon-fre')} 10.00 – 18.00 <br />
-            {t('AboutUs.sat')} 11.00 – 16.00 <br />
-            {t('AboutUs.sun')}
+            {t("AboutUs.Opening")} <br />
+            {t("AboutUs.mon-fre")} 10.00 – 18.00 <br />
+            {t("AboutUs.sat")} 11.00 – 16.00 <br />
+            {t("AboutUs.sun")}
           </p>
           <p>
-          {t('AboutUs.tel')} <br />
+            {t("AboutUs.tel")} <br />
             E-post: info@mariashairsalon.com <br />
-            {t('AboutUs.obs')}
+            {t("AboutUs.obs")}
           </p>
         </div>
-        <div className="imageTop"></div>
-        <div className="bottomLeft"><h1>{t('AboutUs.visit')}</h1></div>
+        <div className="imageTop">
+          <img src={salon} alt="salon" srcset="" />
+        </div>
+        <div className="bottomLeft">
+          <h1>{t("AboutUs.visit")}</h1>
+        </div>
         <div className="bottomRight">
-
-        <MapArea>
-        <WrappedMap
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
-      </MapArea>
+          <MapArea>
+            <WrappedMap
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+              loadingElement={<div style={{ height: `100%` }} />}
+              containerElement={<div style={{ height: `400px` }} />}
+              mapElement={<div style={{ height: `100%` }} />}
+            />
+          </MapArea>
         </div>
       </div>
     </AboutStyle>

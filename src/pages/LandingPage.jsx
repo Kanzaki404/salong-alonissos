@@ -28,13 +28,11 @@ const StyledContent = styled.div`
   padding: 25px;
   grid-gap: 5px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.69);
+  background: rgba(0, 0, 0, 0.65);
   border-top-left-radius: 2.5px;
   border-top-right-radius: 2.5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-
-
 
   .topRight {
     background-image: url(${img1});
@@ -54,6 +52,11 @@ const StyledContent = styled.div`
     color: white;
     margin-bottom: 0;
     text-align: start;
+  }
+
+
+   h1 {
+     animation: scale-in-hor-left 0.5s;
   }
   .bottomRight {
     background-image: url(${img2});
@@ -90,9 +93,25 @@ const StyledContent = styled.div`
     }
   }
 
-
   @media (max-width: 769px) {
     display: block;
+  }
+
+  @keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
   }
 
 `;
