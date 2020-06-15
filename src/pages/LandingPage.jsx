@@ -5,8 +5,8 @@ import desktopImg from "../assets/clearedSalon-min.png";
 // import alonissos from "../assets/alonissos.jpeg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import img1 from "../assets/salon.jpg";
-import img2 from "../assets/salon2.jpg";
+import img1 from "../assets/salon.png";
+import img2 from "../assets/salon2.png";
 const LandingPageStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
